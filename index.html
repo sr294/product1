@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick-theme.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="images/favicon2.png" type="image/vnd.microsoft.icon">
+    
+    <title>お食事処</title>
+</head>
+<body>
+    <header class="header">
+        <div class="pc-head">
+            <div class="logo"><img src="images/test1.png"></div>
+            <nav>
+                <ul class="menu">
+                    <li class="global-nav-item go-top"><a href="#top">T O P</a></li>
+                    <li class="global-nav-item"><a href="#menu">メニュー</a></li>
+                    <li class="global-nav-item"><a href="#information">店舗情報</a></li>
+                    <li class="global-nav-item"><a href="contact.html">ご予約</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sp-head">
+           <div class="mobile-logo go-top"><a href="#top"><img src="images/test1.png"></a></div>
+            <div class="global-reserve">
+                <a class="link" href="contact.html">ご予約</a>
+            </div>
+
+            <nav class="nav">
+                <ul id="list">
+                    <li class="global-nav-item"><a href="#top">T O P</a></li>
+                    <li class="global-nav-item"><a href="#menu">メニュー</a></li>
+                    <li class="global-nav-item"><a href="#information">店舗情報</a></li>
+                    <li class="global-nav-item"><a href="contact.html">ご予約</a></li>
+                </ul>
+            </nav>
+            <button type="button" id="nav-button" onClick="navFunc()"></button>
+
+        </div>
+    </header>
+        <div class="wrap"> 
+            <div class="top-area" id="top">
+                <ul class="slider">
+                    <li><img src="images/4267648_m.jpg">
+                    <p class="slider__title">一流の業を</p></li>
+                    <li><img src="images/1197993_m.jpg">
+                        <p class="slider__title">極上の空間で</p></li>
+                    <li><img src="images/2261129_m.jpg">
+                        <p class="slider__title">ゆっくりと</p></li>
+                </ul>
+            </div>
+
+            <div class="wrap2">
+            <h2 class="main-border">material</h2>
+            <div class="material-area">
+                <div class="material1">
+                    <img src="images/4084249_s.jpg" alt="旬の食材">
+                    <p>使用される野菜は<br>すべて自家栽培、無農薬です。<br>
+                        旬の野菜を取り揃えております。
+                    </p>
+                </div>
+                <div class="material2">
+                    <img src="images/tori.png" alt="新鮮な食材">
+                    <p>食材は安心・安全の<br>国産鶏もも肉を使用しています。</p>
+                </div>
+            </div>
+            </div>
+            <div class="main-area" id="menu">
+                <h2 class="main-border">lunch menu</h2>
+                <div class="lunch">
+                    <div class="lunch-image">
+                    <img src="images/lunch1.jpg">
+                        <p>極み</p>
+                        <p>新鮮な海の幸を使った<br>握り盛り合わせ</p>
+                    </div>
+                    <div class="lunch-image">
+                    <img src="images/lunch2.jpg">
+                            <p>至高</p>
+                            <p>つるっとした自家製麺</p>
+                    </div>
+                    <div class="lunch-image">
+                    <img src="images/lunch3.jpg">
+                        <p>頂き</p>
+                        <p>栄養バランスに基づいた定食</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <h2 class="info" id="information">information</h2>
+                <div id="map"></div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcBXPJNrg0kxeoTijm1p4jhK1HelPvhG4&callback=initMap"></script>
+</body>
+</html>
+
+<!-- 
+次回メンタリング(3/23火曜)までに
+javascript30　一日一つ30分程度
+html/css　テンプレート参考
+veu.jsで作るポートフォリオどんなサービスか考える -->
