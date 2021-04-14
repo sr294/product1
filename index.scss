@@ -20,6 +20,7 @@ body{
 }
 
 /* ここからheader */
+
 .pc-head, .sp-head {
     background-color:#010001;
 }
@@ -49,7 +50,7 @@ body{
 @media (max-width:559px) {
     .sp-head {
         position:fixed;
-        height: 80px;
+        height: 60px;
         width:100%;
         display: flex;
         color: #fff;
@@ -61,7 +62,7 @@ body{
     text-align: center;
     width:25%;
     background-color:#745229;
-    line-height: 80px;
+    line-height: 65px;
     margin-left:auto;
 }
 
@@ -85,13 +86,13 @@ body{
     padding:50px 0;
     list-style: none;
     color:white;
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+
 }
 
 /* ここまでheader */
 
 .wrap {
-    background-color: #D3CBBC;
     overflow: hidden;
 }
 
@@ -138,13 +139,13 @@ body{
         margin-top: 60px;
         width: 450px;
         height: 300px;
+        border-radius: 30px;
     }
     }
     .material2 {
 
         p{ 
             text-align: center;
-            margin-right: 60px;
             font-size:24px;
             font-weight: bold;
             
@@ -153,6 +154,7 @@ body{
         img {
             display: block;
             margin: 0 auto;
+            border-radius: 30px;
         }
     }
 }
@@ -186,7 +188,6 @@ body{
     visibility: hidden;
     transition: all 1s;
     transform: translateY(60px);
-    margin-bottom: 100px;
 }
 
 .wrap2.is-show {
@@ -201,12 +202,14 @@ body{
     visibility: hidden;
     transition: all 1s;
     transform: translateY(60px);
+    background-color: #D3CBBC;
 }
 
 .main-area.is-show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    margin-top: 60px;
 }
 
 h2 {
@@ -222,6 +225,7 @@ h2 {
     align-items: center;
     line-height: 3rem;
     letter-spacing: 4px;
+    padding-top: 50px;
 }
 
 .main-border:before,
@@ -242,6 +246,7 @@ h2 {
 
 @media (min-width:560px){
     .lunch {
+        background-color: #D3CBBC;
         display: flex;
 }
 }
@@ -255,24 +260,9 @@ h2 {
     font-family: 'Kosugi Maru', sans-serif;
 }
 
-@media(min-width:560px){
-.slick-next.slick-arrow {
-    right: 45px;
-} 
-
-.slick-prev.slick-arrow {
-    left: 0;
-    z-index: 2;
-}
-}
-
-.slick-next:before,
-.slick-prev:before {
-    font-size:65px !important;
-}
 
 .slick-dots {
-    bottom: 0 !important;
+    bottom: 30px  !important
 }
 
 .slick-dots li button::before {
@@ -280,6 +270,8 @@ h2 {
 }
 
 .slick-slider {
+    height: 100vh;
+    overflow: hidden;
     margin-bottom: 0 !important;   
 }
 
@@ -298,10 +290,9 @@ h2 {
 }
 
 #map {
-    width:500px;
-    height:300px;
+    width:100%;
+    height:500px;
     margin-top: 4%;
-    margin-bottom: 4%;
     display: inline-block;
 }
 
@@ -310,6 +301,7 @@ h2 {
     align-items: center;
     line-height: 3rem;
     letter-spacing: 4px;
+    padding-top: 50px;
 }
 
 .info:before,
@@ -335,10 +327,11 @@ h2 {
     position: absolute;
     top: 10%;
     left: 10%;
-    color: #fff;
-    font-size: 2em;
+    color: black;
+    font-size: 3em;
     font-weight: bold;
     opacity: 0;
+    font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
   }
   .slider .slick-active .slider__title {
     -webkit-animation-name: fadein-text;
@@ -415,7 +408,7 @@ h2 {
   /* ナビゲーションボタン（開く） */
   #nav-button{
     position: relative;
-    top:30px;
+    top:20px;
     outline: none;
     border: none;
     background: none;
