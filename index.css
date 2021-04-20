@@ -102,7 +102,7 @@ body {
 
 @media (max-width: 559px) {
   .top-area {
-    padding-top: 80px;
+    padding-top: 60px;
     /*.sp-headの高さ分のmarginを指定*/
   }
 }
@@ -127,6 +127,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
   }
   .material-area .material1 img {
     margin: 0 auto;
@@ -140,6 +141,7 @@ body {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
+    font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
   }
   .material-area .material2 img {
     display: block;
@@ -149,6 +151,9 @@ body {
 }
 
 @media (max-width: 559px) {
+  .material-area {
+    padding-bottom: 30px;
+  }
   .material-area img {
     margin-top: 5%;
     height: 100px;
@@ -198,12 +203,19 @@ body {
   background-color: #D3CBBC;
 }
 
+@media (max-width: 559px) {
+  .main-area {
+    padding-bottom: 20px;
+  }
+}
+
 .main-area.is-show {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   margin-top: 60px;
+  padding-top: 35px;
 }
 
 h2 {
@@ -224,6 +236,12 @@ h2 {
   line-height: 3rem;
   letter-spacing: 4px;
   padding-top: 50px;
+}
+
+@media (max-width: 559px) {
+  .main-border {
+    padding-top: 0px;
+  }
 }
 
 .main-border:before,
@@ -251,6 +269,10 @@ h2 {
     display: -ms-flexbox;
     display: flex;
   }
+  .lunch p {
+    font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+    font-weight: bold;
+  }
 }
 
 .lunch-image {
@@ -259,7 +281,6 @@ h2 {
 
 .lunch-image > p {
   text-align: center;
-  font-family: 'Kosugi Maru', sans-serif;
 }
 
 .slick-dots {
@@ -271,7 +292,6 @@ h2 {
 }
 
 .slick-slider {
-  height: 100vh;
   overflow: hidden;
   margin-bottom: 0 !important;
 }
@@ -309,6 +329,12 @@ h2 {
   padding-top: 50px;
 }
 
+@media (max-width: 559px) {
+  .info {
+    padding-top: 20px;
+  }
+}
+
 .info:before,
 .info:after {
   content: "";
@@ -340,6 +366,12 @@ h2 {
   font-weight: bold;
   opacity: 0;
   font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
+
+@media (max-width: 559px) {
+  .slider__title {
+    font-size: 2em;
+  }
 }
 
 .slider .slick-active .slider__title {
